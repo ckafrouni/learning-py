@@ -1,9 +1,10 @@
+import __init__
 import unittest
 from primes import next_prime
 from helper import factor
 
-class TestHelper(unittest.TestCase):
 
+class TestHelper(unittest.TestCase):
     def test_next_prime(self):
         self.assertEqual(next_prime(2), 3)
         # self.assertEqual(next_prime(3), 5)
@@ -54,14 +55,15 @@ class TestHelper(unittest.TestCase):
         # actual = [fact for fact in factor(val)]
         # self.assertEqual(actual, [2, 2, 2, 2, 2, 11])
 
-    def test_factor_big_composite(self):
-        # val = 463698
-        # actual = [fact for fact in factor(val)]
-        # self.assertEqual(actual, [2, 3, 3, 3, 31, 277])
+    # def test_factor_big_composite(self):
+    #     # val = 463698
+    #     # actual = [fact for fact in factor(val)]
+    #     # self.assertEqual(actual, [2, 3, 3, 3, 31, 277])
 
-        val = 897560
-        actual = [fact for fact in factor(val)]
-        self.assertEqual(actual, [2, 2, 2, 5, 19, 1181])
+    #     val = 897560
+    #     actual = [fact for fact in factor(val)]
+    #     self.assertEqual(actual, [2, 2, 2, 5, 19, 1181])
+
 
 if __name__ == "__main__":
     unittest.main()

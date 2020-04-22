@@ -1,9 +1,10 @@
-#!/usr/bin/python3
+import __init__
+
 import unittest
 import calc
 
-class TestCalc(unittest.TestCase):
 
+class TestCalc(unittest.TestCase):
     def test_add(self):
         self.assertEqual(calc.add(10, 5), 15)
         self.assertEqual(calc.add(-1, 1), 0)
@@ -12,7 +13,7 @@ class TestCalc(unittest.TestCase):
 
     def test_sub(self):
         self.assertEqual(calc.sub(10, 5), 5)
-        self.assertEqual(calc.sub(-1, 1), -2) 
+        self.assertEqual(calc.sub(-1, 1), -2)
         self.assertEqual(calc.sub(-1, -1), 0)
         self.assertEqual(calc.sub(0, 0), 0)
 
@@ -30,6 +31,7 @@ class TestCalc(unittest.TestCase):
         self.assertEqual(calc.div(0, 2), 0)
         with self.assertRaises(ZeroDivisionError):
             calc.div(10, 0)
+
 
 if __name__ == "__main__":
     unittest.main()
