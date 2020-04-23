@@ -1,7 +1,10 @@
-import __init__
-
 import unittest
-import calc
+
+import sys
+
+sys.path.append("../")
+
+from UnitTests_demo.calc import calc
 
 
 class TestCalc(unittest.TestCase):
