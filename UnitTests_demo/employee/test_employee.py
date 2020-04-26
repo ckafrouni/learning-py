@@ -1,5 +1,3 @@
-import __init__
-
 import unittest
 from unittest.mock import patch
 from employee import Employee
