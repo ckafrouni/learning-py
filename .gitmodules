@@ -1,0 +1,3 @@
+[submodule "basicapi"]
+	path = basicapi
+	url = git@github.com:ckafrouni/basicapi.git
