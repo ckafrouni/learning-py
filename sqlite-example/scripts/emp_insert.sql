@@ -1,0 +1,1 @@
+INSERT INTO employee(firstname,lastname) VALUES("fonzi","touma");

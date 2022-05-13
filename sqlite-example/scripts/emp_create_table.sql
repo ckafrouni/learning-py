@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS employee(
+	id INTEGER PRIMARY KEY,
+	firstname TEXT NOT NULL,
+	lastname TEXT NOT NULL
+);
