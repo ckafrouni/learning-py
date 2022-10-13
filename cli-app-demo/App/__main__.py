@@ -10,19 +10,6 @@ class Person:
 	age:		int
 	sex:		typing.Literal['man', 'woman']
 
-
-def input_firstname() -> str:
-	return input('First name > ')
-
-def input_lastname() -> str:
-	return input('Last name > ')
-
-def input_age() -> str:
-	return input('Age > ')
-
-def input_sex() -> str:
-	return input('Sex ([wo]man) >')
-
 def flow():
 	steps: list[callable] = [
 		input_firstname,
@@ -36,6 +23,8 @@ def flow():
 
 
 def main():
+	engine = create_engine("sqlite:///database.db")
+
 	specs = []
 	flow_gen = flow()
 	for response in flow_gen:
